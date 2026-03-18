@@ -49,6 +49,32 @@ nav a:hover {
     color: #3b82f6;
 }
 
+.logo {
+width: 45px;
+height: 45px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-weight: bold;
+font-size: 18px;
+
+border-radius: 10px;
+
+background: linear-gradient(135deg, #3b82f6, #06b6d4);
+color: white;
+
+box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+
+cursor: pointer;
+transition: 0.3s;
+}
+
+.logo:hover {
+transform: scale(1.1);
+}
+
 /* ===== HERO ===== */
 .hero {
     text-align: center;
