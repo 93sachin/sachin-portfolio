@@ -86,6 +86,46 @@ nav a:hover {
     color: #cbd5f5;
 }
 
+/* BUTTON GROUP (GitHub, LinkedIn, Resume) */
+.buttons {
+margin-top: 20px;
+}
+
+.buttons a {
+margin: 10px;
+padding: 10px 20px;
+background: linear-gradient(to right, #3b82f6, #06b6d4);
+color: white;
+border-radius: 8px;
+text-decoration: none;
+display: inline-block;
+}
+
+/* MAIN BUTTON (Explore) */
+.main-btn {
+display: block;
+margin: 25px auto 0;   /* center + spacing */
+width: fit-content;
+
+padding: 12px 30px;
+font-size: 15px;
+
+background: transparent;
+border: 1px solid #3b82f6;
+color: #3b82f6;
+
+border-radius: 25px;
+text-decoration: none;
+
+transition: 0.3s;
+}
+
+.main-btn:hover {
+background: #3b82f6;
+color: white;
+transform: translateY(-3px);
+}
+
 /* ===== BUTTONS ===== */
 .buttons a {
     margin: 10px;
