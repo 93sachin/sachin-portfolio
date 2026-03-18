@@ -26,6 +26,15 @@ background: #020617;      /* dark background */
 z-index: 1000;            /* sabke upar rahe */
 }
 
+.profile-img {
+box-shadow: 0 0 20px rgba(59,130,246,0.6);
+transition: 0.3s;
+}
+
+.profile-img:hover {
+transform: scale(1.05);
+}
+
 /* logo (Sachin Kumar) */
 nav h1 {
 font-size: 22px;
