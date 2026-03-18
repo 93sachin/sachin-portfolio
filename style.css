@@ -299,3 +299,81 @@ transition: 0.3s;
 .socials a:hover {
 color: #3b82f6;
 }
+
+/* CONTACT SECTION */
+.contact-sub {
+color: #94a3b8;
+text-align: center;
+margin-bottom: 40px;
+}
+
+.contact-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+margin-top: 40px;
+}
+
+/* LEFT */
+.contact-left {
+text-align: left;
+}
+
+.contact-left p {
+margin: 15px 0;
+color: #cbd5f5;
+}
+
+.contact-left h4 {
+margin-top: 20px;
+}
+
+/* RIGHT FORM */
+.contact-right {
+background: #1e293b;
+padding: 25px;
+border-radius: 15px;
+}
+
+.contact-right form {
+display: flex;
+flex-direction: column;
+}
+
+.contact-right input,
+.contact-right textarea {
+margin: 10px 0;
+padding: 12px;
+border-radius: 8px;
+border: none;
+outline: none;
+background: #020617;
+color: white;
+}
+
+.contact-right textarea {
+height: 120px;
+resize: none;
+}
+
+.contact-right button {
+margin-top: 10px;
+padding: 12px;
+border: none;
+border-radius: 8px;
+background: linear-gradient(to right, #3b82f6, #06b6d4);
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.contact-right button:hover {
+transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.contact-container {
+grid-template-columns: 1fr;
+}
+}
