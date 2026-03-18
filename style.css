@@ -185,3 +185,19 @@ transition: 0.3s;
 .featured-card:hover {
 transform: scale(1.03);
 }
+
+#certifications {
+text-align: center;
+}
+
+#certifications ul {
+list-style: none;
+padding: 0;
+}
+
+#certifications li {
+margin: 10px 0;
+background: #1e293b;
+padding: 10px;
+border-radius: 8px;
+}
