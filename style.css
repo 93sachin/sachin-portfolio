@@ -499,155 +499,55 @@ transition: 0.3s;
 transform: scale(1.05);
 }
 
-/* ===== GLOBAL IMPROVEMENT ===== */
+/* ===== CLEAN ALIGNMENT FIX ===== */
+
+/* section spacing */
 section {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
-/* ===== NAVBAR PREMIUM ===== */
-nav {
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-
-nav a {
-    position: relative;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #3b82f6;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* ===== HERO FIX ===== */
+/* hero center */
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.hero p {
-    max-width: 650px;
+/* about alignment */
+.about-container {
+    align-items: start;
 }
 
-/* ===== BUTTON IMPROVEMENT ===== */
-.buttons a {
-    box-shadow: 0 5px 15px rgba(59,130,246,0.4);
-}
-
-.buttons a:hover {
-    transform: translateY(-3px) scale(1.05);
-}
-
-/* ===== CARD FIX (IMPORTANT) ===== */
+/* card equal height */
 .card,
 .cert-card,
 .edu-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-/* ===== PROJECT ALIGNMENT ===== */
+/* project grid fix */
 .project-grid .card {
-    min-height: 250px;
+    min-height: 220px;
 }
 
-/* ===== FEATURED CENTER ===== */
-.featured-card {
-    text-align: center;
-}
-
-/* ===== IMAGE CONSISTENCY ===== */
-.edu-img,
-.cert-img {
-    height: 160px;
-}
-
-/* ===== SKILLS IMPROVE ===== */
-.skill-box {
-    transition: 0.3s;
-}
-
-.skill-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(59,130,246,0.2);
-}
-
-/* ===== TAGS CLEAN ===== */
-.tags span {
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-/* ===== EXPERIENCE FIX ===== */
+/* experience center */
 #experience .card {
-    max-width: 900px;
+    max-width: 850px;
     margin: auto;
 }
 
-/* ===== CONTACT FIX (VERY IMPORTANT) ===== */
+/* contact fix */
 .contact-container {
     align-items: center;
-    gap: 60px;
 }
 
-.contact-left {
-    padding-left: 10px;
-}
-
-.contact-right {
-    width: 100%;
-}
-
-.contact-right input,
-.contact-right textarea {
-    width: 100%;
-}
-
-.contact-right button {
-    width: 100%;
-    font-weight: bold;
-}
-
-/* ===== FOOTER IMPROVE ===== */
-footer {
-    border-top: 1px solid rgba(255,255,255,0.05);
-    margin-top: 50px;
-}
-
-/* ===== SMOOTH HOVER ===== */
-.card:hover,
-.cert-card:hover,
-.edu-card:hover {
-    transform: translateY(-10px) scale(1.01);
-}
-
-/* ===== RESPONSIVE BETTER ===== */
+/* responsive */
 @media (max-width: 768px) {
-
     .about-container,
     .contact-container {
         grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    nav {
-        padding: 15px 20px;
     }
 }
