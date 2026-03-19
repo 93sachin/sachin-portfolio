@@ -284,6 +284,107 @@ section {
     background: #3b82f6;
 }
 
+/* ===== EXPERIENCE CARD ===== */
+.exp-card {
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
+}
+
+/* HOVER EFFECT 🔥 */
+.exp-card:hover {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 20px 60px rgba(59,130,246,0.3);
+}
+
+/* LEFT BORDER GLOW */
+.exp-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    height: 60%;
+    width: 4px;
+    background: linear-gradient(#3b82f6,#06b6d4);
+    border-radius: 10px;
+}
+
+/* META */
+.exp-meta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #9ca3af;
+    margin: 10px 0 20px;
+}
+
+/* BADGE */
+.badge {
+    background: #22c55e;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+/* DESCRIPTION */
+.exp-desc {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* ===== BOTTOM GRID ===== */
+.exp-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* ===== TAGS ===== */
+.tags span {
+    display: inline-block;
+    background: #020617;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.tags span:hover {
+    background: #3b82f6;
+}
+
+/* ===== BULLETS COLORED 🔥 ===== */
+.exp-bottom ul {
+    padding-left: 20px;
+}
+
+.exp-bottom li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* CUSTOM BULLET */
+.exp-bottom li::marker {
+    color: #3b82f6;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .exp-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== PROJECTS ===== */
 .project-grid {
     display: grid;
