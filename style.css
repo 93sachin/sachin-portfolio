@@ -32,6 +32,8 @@ nav h1 {
 
 nav ul {
     align-items: center;
+    list-style: none;
+    display: flex;
 }
 
 nav li {
@@ -77,8 +79,8 @@ transform: scale(1.1);
 /* ===== HERO ===== */
 .hero {
     text-align: center;
-    padding: 120px 20px;
-    background: radial-gradient(circle at top, #0f172a, #020617);
+    padding: 140px 20px;
+    background: transparent;
 }
 
 .profile-img {
@@ -102,6 +104,7 @@ transform: scale(1.1);
 }
 
 .hero h3 {
+    margin-top: 10px;
     color: #94a3b8;
 }
 
@@ -111,13 +114,18 @@ transform: scale(1.1);
     color: #cbd5f5;
 }
 
+.hero-container {
+    background: none;
+    box-shadow: none;
+}
+
 /* BUTTON GROUP (GitHub, LinkedIn, Resume) */
 .buttons {
-margin-top: 20px;
+margin-top: 25px;
 }
 
 .buttons a {
-margin: 10px;
+margin: 8px;
 padding: 10px 20px;
 background: linear-gradient(to right, #3b82f6, #06b6d4);
 color: white;
@@ -402,7 +410,7 @@ footer {
     color: #aaa;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE =====
 @media (max-width: 768px) {
     nav {
         padding: 15px 20px;
@@ -411,7 +419,7 @@ footer {
     .about-container {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 .socials {
 margin: 20px 0;
