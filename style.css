@@ -420,13 +420,32 @@ section {
     transition: all 0.3s ease;
 }
 
-/* training center */
-.training-card {
-    max-width: 700px;
-    margin: auto;
+/* ===== FEATURED CERT ===== */
+.featured-cert {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: linear-gradient(135deg,#1e293b,#0f172a);
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 40px rgba(59,130,246,0.3);
+    transition: 0.3s;
 }
 
-/* spacing */
+.featured-cert:hover {
+    transform: translateY(-8px);
+}
+
+/* description */
+.cert-desc {
+    margin: 15px 0;
+    color: #cbd5f5;
+}
+
+/* spacing fix */
 .cert-card h3 {
     margin-top: 10px;
 }
@@ -440,11 +459,6 @@ section {
     font-size: 12px;
     color: #6b7280;
     margin-bottom: 10px;
-}
-
-/* uniform button spacing */
-.buttons {
-    margin-top: 10px;
 }
 
 /* ===== CERTIFICATIONS ===== */
