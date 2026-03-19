@@ -478,12 +478,20 @@ section {
 #certifications h2 {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    align-items: stretch;
+    justify-content: center;
+}
+
+.cert-grid .cert-card:last-child {
+    grid-column: span 3;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 /* CARD */
