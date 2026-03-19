@@ -181,6 +181,18 @@ section {
     padding: 80px 20px;
 }
 
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 40px;
+}
+
 /* ===== ABOUT ===== */
 .about-container {
     display: grid;
