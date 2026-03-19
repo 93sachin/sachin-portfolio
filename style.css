@@ -76,7 +76,7 @@ transform: scale(1.1);
 }
 
 /* ===== HERO ===== */
-.hero {
+.home {
     text-align: center;
     padding: 120px 20px;
     background: radial-gradient(circle at top, #0f172a, #020617);
@@ -92,21 +92,21 @@ transform: scale(1.1);
     margin-bottom: 20px;
 }
 
-.hero h1 {
+.home h1 {
     font-size: 48px;
 }
 
-.hero span {
+.home span {
     background: linear-gradient(to right, #3b82f6, #22c55e);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.hero h3 {
+.home h3 {
     color: #94a3b8;
 }
 
-.hero p {
+.home p {
     max-width: 600px;
     margin: 15px auto;
     color: #cbd5f5;
