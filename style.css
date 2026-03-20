@@ -1,3 +1,7 @@
+* {
+    transition: all 0.25s ease;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,6 +16,17 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 40px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ===== NAVBAR ===== */
@@ -94,6 +109,7 @@ transform: scale(1.1);
 
 .home h1 {
     font-size: 48px;
+    animation: fadeUp 1s ease forwards;
 }
 
 .home span {
@@ -110,6 +126,18 @@ transform: scale(1.1);
     max-width: 600px;
     margin: 15px auto;
     color: #cbd5f5;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* BUTTON GROUP (GitHub, LinkedIn, Resume) */
@@ -118,13 +146,19 @@ transform: scale(1.1);
 }
 
 .buttons a {
-margin: 10px;
-padding: 10px 20px;
-background: linear-gradient(to right, #3b82f6, #06b6d4);
-color: white;
-border-radius: 8px;
-text-decoration: none;
-display: inline-block;
+    display: inline-block;
+    margin-top: auto;
+    padding: 8px 14px;
+    background: linear-gradient(#3b82f6,#06b6d4);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(59,130,246,0.4);
 }
 
 /* MAIN BUTTON (Explore) */
@@ -152,21 +186,7 @@ color: white;
 transform: translateY(-3px);
 }
 
-/* ===== BUTTONS ===== */
-.buttons a {
-   display: inline-block;
-    margin-top: auto;
-    padding: 8px 14px;
-    background: linear-gradient(#3b82f6,#06b6d4);
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-}
 
-.buttons a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(59,130,246,0.6);
-}
 
 /* ===== SECTIONS ===== */
 section {
@@ -179,6 +199,9 @@ section {
     text-align: center;
     font-size: 32px;
     margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
 }
 
 .section-subtitle {
@@ -218,6 +241,14 @@ section {
 }
 
 /* IMAGE */
+img {
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
 .edu-img {
     width: 100%;
     height: 140px;
@@ -394,6 +425,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        will-change: transform;
 
         height: 100%;
         min-height: 480px;   /* FIX HEIGHT */
@@ -404,9 +436,10 @@ section {
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px) scale(1.01);
     box-shadow: 0 15px 40px rgba(59,130,246,0.25);
 }
+
 
 .card::before {
     content: "";
@@ -533,6 +566,7 @@ section {
     background: linear-gradient(145deg,#1e293b,#0f172a);
     padding: 20px;
     border-radius: 15px;
+    will-change: transform;
 
     display: flex;
     flex-direction: column;
@@ -570,7 +604,7 @@ section {
 .cert-card:hover h3,
 .cert-card:hover p,
 .cert-card:hover .tags {
-    transform: translateY(-3px);
+    transform: translateY(-10px) scale(1.01);
 }
 
 .cert-card:hover::before {

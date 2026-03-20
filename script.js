@@ -24,3 +24,15 @@ window.onload = function () {
 
     typeEffect();
 };
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll("section, .card, .cert-card");
+
+hiddenElements.forEach((el) => observer.observe(el));
