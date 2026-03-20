@@ -383,7 +383,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     column-gap: 40px;   /* left-right space */
-    row-gap: 80px;
+    row-gap: 70px;
 }
 
 .card {
