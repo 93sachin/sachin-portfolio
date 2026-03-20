@@ -381,25 +381,25 @@ section {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: stretch;
-    gap: 30px;
+    gap: 40px;
 }
 
-.card {
-    background: linear-gradient(145deg, #1e293b, #0f172a);
-    padding: 20px;
-    border-radius: 18px;
+    .card {
+        background: linear-gradient(145deg, #1e293b, #0f172a);
+        padding: 20px;
+        border-radius: 18px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    height: 100%;
-    min-height: 480px;   /* FIX HEIGHT */
+        height: 100%;
+        min-height: 480px;   /* FIX HEIGHT */
 
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.3s ease;
-}
+        border: 1px solid rgba(255,255,255,0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        transition: all 0.3s ease;
+    }
 
 .card:hover {
     transform: translateY(-8px);
@@ -407,7 +407,7 @@ section {
 }
 
 .card h3 {
-    margin: 10px 0;
+    margin: 12px 0;
     font-size: 18px;
 }
 
@@ -454,7 +454,7 @@ section {
     height: 160px;
     object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     transition: 0.3s;
 }
 
