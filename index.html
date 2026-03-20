@@ -507,13 +507,15 @@ Have a project in mind or a role to fill? I'd love to hear from you.
 
         <h3>Send Me a Message</h3>
 
-        <form>
+        <form action="https://formspree.io/f/xabcdeyz" method="POST">
 
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" name="name" placeholder="Enter your name" required>
 
-            <input type="email" placeholder="your.email@example.com" required>
+            <input type="email" name="email" placeholder="your.email@example.com" required>
 
-            <textarea placeholder="Write your message..." required></textarea>
+            <textarea name="message" placeholder="Write your message..." required></textarea>
+
+            <input type="hidden" name="_redirect" value="thankyou.html">
 
             <button type="submit">Send Message ✈️</button>
 
