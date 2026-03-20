@@ -62,18 +62,23 @@ window.addEventListener("scroll", () => {
 
 const form = document.querySelector("form");
 
-form.addEventListener("submit", () => {
-    setTimeout(() => {
+form.addEventListener("submit", function (e) {
+    e.preventDefault(); // 🔥 PAGE RELOAD ROK DIYA
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(() => {
         document.getElementById("success-msg").style.display = "block";
-    }, 500);
+        form.reset(); // optional (form clear ho jayega)
+    })
+    .catch(() => {
+        alert("❌ Error sending message");
+    });
 });
-
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = () => {
-    topBtn.style.display = window.scrollY > 300 ? "block" : "none";
-};
-
-topBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-};
