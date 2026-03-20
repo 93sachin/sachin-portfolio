@@ -161,6 +161,11 @@ transform: scale(1.1);
     box-shadow: 0 10px 30px rgba(59,130,246,0.4);
 }
 
+/* BUTTON */
+.buttons {
+    margin-top: 10px;   /* reduce space */
+}
+
 /* MAIN BUTTON (Explore) */
 .main-btn {
 display: block;
@@ -432,7 +437,8 @@ section {
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 10px;
         will-change: transform;
         position: relative;
 
@@ -518,11 +524,13 @@ section {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
 .tech {
     margin-top: 10px;
+    margin-bottom: 8px;
     font-size: 13px;
     color: #38bdf8;
 }
@@ -612,6 +620,7 @@ section {
         linear-gradient(#000 0 0);
 
     -webkit-mask-composite: xor;
+    pointer-events: none;
     mask-composite: exclude;
 
     opacity: 0;
