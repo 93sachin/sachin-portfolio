@@ -1,7 +1,3 @@
-* {
-    transition: all 0.25s ease;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -11,6 +7,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #020617;
     color: white;
+    transition: background 0.3s ease;
 }
 
 h2 {
@@ -62,6 +59,11 @@ nav a {
 
 nav a:hover {
     color: #3b82f6;
+}
+
+nav a.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
 }
 
 .logo {
@@ -544,6 +546,16 @@ section {
     transition: transform 0.4s ease;
 }
 
+/* FEATURED */
+.featured {
+    background: #22c55e;
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 20px;
+    margin-left: 8px;
+    color: white;
+}
+
 /* Hover pe zoom effect */
 .card:hover .project-img {
     transform: scale(1.08);
@@ -822,4 +834,17 @@ transform: scale(1.05);
 .contact-container {
 grid-template-columns: 1fr;
 }
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 50%;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
