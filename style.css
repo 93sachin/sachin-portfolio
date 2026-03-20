@@ -315,13 +315,6 @@ section {
     transition: all 0.4s ease;
 }
 
-.exp-card h3,
-.exp-card h4,
-.exp-card p,
-.exp-card .tags,
-.exp-card li {
-    transition: all 0.3s ease;
-}
 
 /* HOVER EFFECT 🔥 */
 .exp-card:hover {
@@ -329,13 +322,6 @@ section {
     box-shadow: 0 20px 60px rgba(59,130,246,0.3);
 }
 
-.exp-card:hover h3,
-.exp-card:hover h4,
-.exp-card:hover p,
-.exp-card:hover .tags,
-.exp-card:hover li {
-    transform: translateY(-3px);
-}
 
 /* LEFT BORDER GLOW */
 .exp-card::before {
@@ -455,12 +441,12 @@ section {
 
         border: 1px solid rgba(255,255,255,0.05);
         box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        transition: all 0.3s ease;
+        transition: all 0.4s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.01);
-    box-shadow: 0 15px 40px rgba(59,130,246,0.25);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(59,130,246,0.25);
 }
 
 
@@ -468,7 +454,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 1px;
 
     background: linear-gradient(135deg, #3b82f6, transparent);
@@ -489,6 +475,18 @@ section {
 .card h3 {
     margin: 12px 0;
     font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.card p,
+.card .buttons{
+    transition: all 0.3s ease;
+}
+
+.card:hover h3,
+.card:hover p,
+.card:hover .buttons {
+    transform: translateY(-4px);
 }
 
 .card a {
