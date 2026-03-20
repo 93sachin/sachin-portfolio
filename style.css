@@ -383,7 +383,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     column-gap: 40px;   /* left-right space */
-    row-gap: 60px;
+    row-gap: 80px;
 }
 
 .card {
@@ -394,7 +394,6 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 30px;
 
         height: 100%;
         min-height: 480px;   /* FIX HEIGHT */
