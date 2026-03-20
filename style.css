@@ -835,16 +835,3 @@ transform: scale(1.05);
 grid-template-columns: 1fr;
 }
 }
-
-#topBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 14px;
-    border: none;
-    border-radius: 50%;
-    background: #3b82f6;
-    color: white;
-    cursor: pointer;
-    display: none;
-}
