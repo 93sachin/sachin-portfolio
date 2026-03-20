@@ -428,6 +428,7 @@ section {
     gap: 40px;
     column-gap: 40px;   /* left-right space */
     row-gap: 70px;
+    align-items: stretch;
 }
 
 .card {
@@ -442,8 +443,7 @@ section {
         will-change: transform;
         position: relative;
 
-        height: 100%;
-        min-height: 480px;   /* FIX HEIGHT */
+        height: auto;
 
         border: 1px solid rgba(255,255,255,0.05);
         box-shadow: 0 10px 30px rgba(0,0,0,0.4);
