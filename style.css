@@ -382,7 +382,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    column-gap: 30px;   /* left-right space */
+    column-gap: 40px;   /* left-right space */
     row-gap: 60px;
 }
 
