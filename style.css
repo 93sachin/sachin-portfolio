@@ -386,7 +386,7 @@ section {
     row-gap: 60px;
 }
 
-    .card {
+.card {
         background: linear-gradient(145deg, #1e293b, #0f172a);
         padding: 20px;
         border-radius: 18px;
@@ -394,6 +394,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 30px;
 
         height: 100%;
         min-height: 480px;   /* FIX HEIGHT */
@@ -401,7 +402,7 @@ section {
         border: 1px solid rgba(255,255,255,0.05);
         box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         transition: all 0.3s ease;
-    }
+}
 
 .card:hover {
     transform: translateY(-8px);
