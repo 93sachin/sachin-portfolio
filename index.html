@@ -5,542 +5,723 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sachin Kumar | Portfolio</title>
 <link rel="stylesheet" href="style.css">
-
 <!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- PARTICLES BACKGROUND -->
+<canvas id="particles-canvas"></canvas>
+
 <!-- NAVBAR -->
-<nav>
+<nav id="navbar">
+  <a href="#home" class="logo">SK</a>
 
-<div class="logo">SK</div>
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 
-
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#certifications">Certifications</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+  <ul id="nav-menu">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#certifications" class="nav-link">Certificates</a></li>
+    <li><a href="#resume" class="nav-link">Resume</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
 </nav>
 
-<!-- HOME -->
+<!-- ===================== HOME ===================== -->
 <section id="home" class="home">
-<img src="images/Myimages.jpeg" alt="Sachin" class="profile-img">
-<h1><span id="typing"></span></h1>
-<h3>
-🚀 Transforming Data into Decisions | 
-💻 Full Stack Developer | 
-📊 Machine Learning Enthusiast
-</h3>
+  <div class="home-content">
+    <div class="avatar-wrapper">
+      <img src="images/Myimages.jpeg" alt="Sachin Kumar" class="profile-img">
+      <div class="avatar-ring"></div>
+    </div>
 
-<p>
-Passionate about solving real-world problems using data and technology.
-Skilled in Machine Learning, Data Analysis, and building scalable web applications 
-using Python, Django, and React. I focus on creating impactful, data-driven solutions 
-through real-world projects.
+    <h1><span id="typing"></span><span class="cursor">|</span></h1>
 
-<br><br>
-<strong>Aspiring Data Scientist focused on building intelligent systems that solve real-world problems.</strong>
-</p>
+    <div class="badge-row">
+      <span class="badge-pill">🚀 Data Scientist</span>
+      <span class="badge-pill">💻 Full Stack Dev</span>
+      <span class="badge-pill">🤖 ML Enthusiast</span>
+    </div>
 
-<div class="socials">
-<a href="https://github.com/93sachin" target="_blank"><i class="fab fa-github"></i></a>
-<a href="https://www.linkedin.com/in/sachin-kumar2027/" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="mailto:sachinesky@gmail.com"><i class="fas fa-envelope"></i></a>
-</div>
+    <p class="hero-desc">
+      Passionate about solving real-world problems using data and technology.
+      Skilled in Machine Learning, Data Analysis, and building scalable web applications
+      using Python, Django, and React.
+    </p>
 
-<div class="buttons">
-<a href="https://github.com/93sachin" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/sachin-kumar2027/" target="_blank">LinkedIn</a>
-<a href="Sachin_Gen_Resume.pdf" target="_blank">Resume</a>
-</div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">9+</span>
+        <span class="stat-label">Certificates</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Internship</span>
+      </div>
+    </div>
 
+    <div class="socials">
+      <a href="https://github.com/93sachin" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sachin-kumar2027/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sachinesky@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
 
-<a href="#about" class="main-btn">Explore My Journey ↓</a>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+      <a href="#contact" class="btn-outline">Hire Me <i class="fas fa-paper-plane"></i></a>
+      <a href="Sachin_Gen_Resume.pdf" target="_blank" class="btn-outline">Resume <i class="fas fa-download"></i></a>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">Who I Am</span>
+    <h2>About <span class="gradient-text">Me</span></h2>
+  </div>
 
-<h2>About Me</h2>
+  <div class="about-container">
 
-<div class="about-container">
+    <!-- LEFT: Education -->
+    <div class="education">
+      <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+      <div class="edu-card reveal">
+        <img src="images/lpu.jpg" alt="LPU" class="edu-img">
+        <h4>Bachelor of Technology</h4>
+        <p class="uni-name">Lovely Professional University</p>
+        <p>Computer Science Engineering &nbsp;|&nbsp; 2023–2027</p>
+        <p>Focused on Data Science, ML, and Development</p>
+        <div class="cgpa-badge"><i class="fas fa-star"></i> CGPA: 6.75 / 10</div>
+      </div>
+    </div>
 
-<!-- LEFT SIDE -->
-<div class="education">
+    <!-- RIGHT: Skills -->
+    <div class="skills-section">
+      <h3><i class="fas fa-code"></i> Technical Skills</h3>
 
-<h3>🎓 Education</h3>
+      <div class="skill-box reveal">
+        <h4><i class="fas fa-terminal"></i> Programming</h4>
+        <span>Python</span><span>Java</span><span>C++</span><span>SQL</span>
+      </div>
 
-<div class="edu-card">
+      <div class="skill-box reveal">
+        <h4><i class="fas fa-brain"></i> Data Science &amp; ML</h4>
+        <span>Machine Learning</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Hadoop</span>
+      </div>
 
-<img src="images/lpu.jpg" alt="LPU" class="edu-img">
+      <div class="skill-box reveal">
+        <h4><i class="fas fa-desktop"></i> Frontend</h4>
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+      </div>
 
-<h4>Bachelor of Technology</h4>
-<p>Lovely Professional University</p>
-<p>Computer Science Engineering | 2023–2027</p>
-<p>Focused on Data Science, ML, and Development</p>
-<p>CGPA: 6.75/10</p>
-</div>
-</div>
+      <div class="skill-box reveal">
+        <h4><i class="fas fa-server"></i> Backend &amp; DB</h4>
+        <span>Django</span><span>REST APIs</span><span>MySQL</span><span>SQLite</span>
+      </div>
 
-<!-- RIGHT SIDE -->
-<div class="skills-section">
+      <div class="skill-box reveal">
+        <h4><i class="fas fa-tools"></i> Tools &amp; Platforms</h4>
+        <span>Git</span><span>GitHub</span><span>Power BI</span><span>Excel</span><span>Streamlit</span>
+      </div>
+    </div>
 
-<h3>💻 Technical Skills</h3>
-
-<div class="skill-box">
-<h4>Programming</h4>
-<span>Python</span>
-<span>Java</span>
-<span>C++</span>
-<span>SQL</span>
-</div>
-
-<div class="skill-box">
-<h4>Data Science</h4>
-<span>Machine Learning</span>
-<span>Pandas</span>
-<span>Data Analysis</span>
-<span>Hadoop</span>
-</div>
-
-<div class="skill-box">
-<h4>Frontend</h4>
-<span>HTML</span>
-<span>CSS</span>
-<span>React</span>
-</div>
-
-<div class="skill-box">
-<h4>Backend</h4>
-<span>Django</span>
-<span>Python</span>
-<span>REST APIs</span>
-</div>
-
-<div class="skill-box">
-<h4>Database</h4>
-<span>MySQL</span>
-<span>SQLite</span>
-</div>
-
-<div class="skill-box">
-<h4>Tools</h4>
-<span>Git</span>
-<span>Power BI</span>
-<span>Excel</span>
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<!-- EXPERIENCE -->
-
-<section id="experience">
-<h2 class="section-title">Internship Experience</h2>
-<p class="section-subtitle">
-Hands-on experience gained through fieldwork, surveys, and real-world data analysis
-</p>
-
-<div class="card experience-card">
-
-<h3>💼 Community Development Intern</h3>
-<h4>Naye Aasha Organization</h4>
-
-<div class="exp-meta">
-<span>📅 Jun 2024 – Jul 2024</span>
-<span>📍Arrah, Bihar, India</span>
-<span class="badge"> Internship</span>
-</div>
-
-
-<p class="exp-desc">
-Conducted on-ground data collection and surveys by visiting communities and interacting with 50+ beneficiaries 
-to understand real-world challenges. Collected, organized, and analyzed survey data to generate meaningful insights. 
-Prepared structured reports and collaborated with team members to support community development initiatives. 
-Gained hands-on experience in field research, data analysis, and reporting.
-</p>
-
-<div class="exp-bottom">
-
-<div>
-<h5>Technologies Used</h5>
-<div class="tags">
-<span>Excel</span>
-<span>Data Analysis</span>
-<span>Reporting</span>
-</div>
-</div>
-
-<div>
-<h5>Key Achievements</h5>
-<ul>
-<li>Conducted field surveys and collected real-time data from 50+ individuals</li>
-<li>Analyzed survey responses to identify trends and key insights</li>
-<li>Prepared reports to support data-driven decision-making</li>
-<li>Improved data accuracy and reporting efficiency</li>
-</ul>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-<h2>Projects</h2>
-
-<div class="project-grid">
-
-<div class="card">
-<div class="hidden">
-<img src="images/job-portal.png" class="project-img">
-<h3>🚀 Job Portal Web App <span class="featured">⭐ Featured</span></h3>
-<p class="desc">
-Developed a full-stack job portal web application that allows users to register, log in, and apply for jobs seamlessly. 
-Implemented secure authentication and role-based access control for job seekers and recruiters. 
-Built REST APIs using Django backend and integrated with a responsive React frontend. 
-Designed features like job posting, application tracking, and user dashboard for better user experience.
-
-<strong>Impact:</strong> Simulated real-world job platform workflow
-</p>
-
-<p class="tech">
-<strong>Tech:</strong> Django, React, MySQL, REST API
-</p>
-
-<div class="buttons">
-<a href="https://github.com/93sachin/job-portal-frontend.git" target="_blank">Frontend Code</a>
-<a href="https://github.com/93sachin/job-portal-backend.git" target="_blank">Backend Code</a>
-<a href="https://job-portal-frontend-2rns.vercel.app/" target="_blank">Live Demo</a>
-</div>
-</div>
-</div>
-
-<div class="card">
-<div class="hidden">
-<img src="images/heart.png" class="project-img">
-<h3>❤️ Heart Disease Prediction</h3>
-<p class="desc">
-Built a machine learning model to predict the likelihood of heart disease using real-world healthcare datasets. 
-Performed data preprocessing including handling missing values, normalization, and feature selection. 
-Trained and evaluated multiple models to achieve an accuracy of around 80%. 
-Visualized results and model performance to improve interpretability and decision-making. 
-
-<strong>Impact:</strong> Enabled data-driven healthcare prediction insights
-</p>
-
-<p class="tech">
-<strong>Tech:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib
-</p>
-
-<div class="buttons">
-<a href="https://github.com/93sachin/Heart_diseases_prediction-System.git" target="_blank">View Code</a>
-<a href="https://heart-disease-ml-dashboard-cjldaxzdmkbqzzfazyzjnr.streamlit.app/" target="_blank">Live Demo</a>
-</div>
-</div>
-</div>
-
-<div class="card">
-<div class="hidden">
-<img src="images/ev.png" class="project-img">
-<h3>⚡ EV Data Analysis</h3>
-<p class="desc">
-Analyzed electric vehicle (EV) dataset using Python to identify trends, patterns, and insights. 
-Used Pandas for data cleaning and manipulation, and Matplotlib/Seaborn for visualization. 
-Explored growth trends, regional adoption, and market distribution of EVs. 
-Generated meaningful visual reports to support data-driven conclusions. 
-
-<strong>Impact:</strong> Generated insights for understanding EV market trends
-</p>
-
-<p class="tech">
-<strong>Tech:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn
-</p>
-
-<div class="buttons">
-<a href="https://github.com/93sachin/Python-project-.git" target="_blank">View Code</a>
-<a href="https://mu8qrsvpwaawa3shvmc3zk.streamlit.app/" target="_blank">Live Demo</a>
-</div>
-</div>
-</div>
-
-<div class="card">
-<div class="hidden">
-<img src="images/covid.png" class="project-img">
-<h3>🦠 COVID-19 Data Analysis Dashboard</h3>
-<p class="desc">
-Developed an interactive dashboard using Power BI to analyze COVID-19 data across regions. 
-Visualized key metrics such as total cases, deaths, recoveries, and trends over time. 
-Enabled filtering and drill-down features for better data exploration. 
-Helped in understanding pandemic patterns and supporting analytical insights 
-
-<strong>Impact:</strong> Improved understanding of pandemic trends
-</p>
-
-<p class="tech">
-<strong>Tech:</strong> Power BI, Data Visualization
-</p>
-
-<div class="buttons">
-<a href="https://github.com/93sachin/Covid-19-Analysis-Dashboard.git" target="_blank">View Code</a>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiODQxZGFlYzYtNzY5NS00ODEyLWI3M2EtYWY2OWU2OGZiN2I2IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" target="_blank">Live Demo</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CERTIFICATIONS -->
-
-<section id="certifications">
-
-<h2>🏆 Certifications</h2>
-<div class="cert-grid">
-
-<!-- 1 -->
-<div class="cert-card">
-<img src="images/training.jpg" class="cert-img">
-<h3>Data Analytics Essentials</h3>
-<p class="org">Lovely Professional University</p>
-<p class="date">2024</p>
-
-<div class="tags">
-<span>Python</span>
-<span>SQL</span>
-<span>Power BI</span>
-</div>
-
-<div class="buttons">
-<a href="images/training.jpg" target="_blank">Verify Certificate</a>
-</div>
-</div>
-
-<!-- 2 -->
-<div class="cert-card">
-<img src="images/genai.jpg" class="cert-img">
-<h3>Build Generative AI Apps</h3>
-<p class="org">Infosys</p>
-<p class="date">2025</p>
-
-<div class="tags">
-<span>GenAI</span>
-<span>LLM</span>
-<span>AI Apps</span>
-</div>
-
-<div class="buttons">
-<a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate">Verify Certificate</a>
-</div>
-</div>
-
-<!-- 3 -->
-<div class="cert-card">
-<img src="images/chatgpt.jpg" class="cert-img">
-<h3>ChatGPT Prompt Engineering</h3>
-<p class="org">Infosys</p>
-<p class="date">2025</p>
-
-<div class="tags">
-<span>Prompting</span>
-<span>AI</span>
-<span>LLM</span>
-</div>
-
-<div class="buttons">
-<a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate">Verify Certificate</a>
-</div>
-</div>
-
-<!-- 4 -->
-<div class="cert-card">
-<img src="images/masterai.jpg" class="cert-img">
-<h3>Master Generative AI</h3>
-<p class="org">Infosys</p>
-<p class="date">2025</p>
-
-<div class="tags">
-<span>AI Tools</span>
-<span>Automation</span>
-</div>
-
-<div class="buttons">
-<a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate">Verify Certificate</a>
-</div>
-</div>
-
-<!-- 5 -->
- <div class="cert-card">
-<img src="images/infosys.jpg" alt="Infosys" class="cert-img">
-<h3>Computational Theory</h3>
-<p class="org">Infosys</p>
-
-<p class="date">2025</p>
-
-<div class="tags">
-<span>Algorithms</span>
-<span>Theory</span>
-</div>
-
-<div class="buttons">
-<a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate" target="_blank">
-Verify Certificate
-</a>
-</div>
-</div>
-
-<!--6-->
-<div class="cert-card">
-<img src="images/nptel.jpg" alt="NPTEL" class="cert-img">
-<h3>Social Networks</h3>
-<p class="org">NPTEL (IIT Madras)</p>
-
-<p class="date">2025</p>
-
-<div class="tags">
-<span>Networking</span>
-<span>Protocols</span>
-</div>
-
-<div class="buttons">
-<a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs102/Course/NPTEL25CS102S95870066310798222.pdf" target="_blank">
-Verify Certificate
-</a>
-</div>
-</div>
-
-<!-- 7 -->
-<div class="cert-card">
-<img src="images/google.jpg" class="cert-img">
-<h3>Generative AI Studio</h3>
-<p class="org">Google Cloud</p>
-<p class="date">2026</p>
-
-<div class="tags">
-<span>Cloud AI</span>
-<span>GenAI</span>
-</div>
-
-<div class="buttons">
-<a href="https://simpli.app.link/7EyhmAyTr1b">Verify Certificate</a>
-</div>
-</div>
-
-
-<!-- 8 -->
-<div class="cert-card">
-<img src="images/coursera.jpg" alt="Coursera" class="cert-img">
-<h3>The Bits and Bytes of Computer Networking</h3>
-<p class="org">Google (Coursera)</p>
-
-<p class="date">2024</p>
-
-<div class="tags">
-<span>Networking</span>
-<span>Internet</span>
-</div>
-
-<div class="buttons">
-<a href="https://www.coursera.org/account/accomplishments/verify/M6QQNWAVPE96" target="_blank">
-Verify Certificate
-</a>
-</div>
-</div>
-
-<!-- 9 -->
-<div class="cert-card">
-<img src="images/udemy.jpg" alt="Udemy" class="cert-img">
-<h3>Python Bootcamp</h3>
-<p class="org">Udemy</p>
-
-<p class="date">2024</p>
-
-<div class="tags">
-<span>Python</span>
-<span>Programming</span>
-</div>
-
-<div class="buttons">
-<a href="https://www.udemy.com/certificate/UC-05409a32-6994-40d6-b208-3eeb2337777c/" target="_blank">
-Verify Certificate
-</a>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-
-<h2>Get In Touch</h2>
-<p class="contact-sub">
-Have a project in mind or a role to fill? I'd love to hear from you.
-</p>
-
-<div class="contact-container">
-
-    <!-- LEFT SIDE -->
-    <div class="contact-left">
-
-        <h3>Let's Connect</h3>
-
-        <p>📧 Email <br> sachinesky@gmail.com</p>
-        <p>📍 Location <br> Arrah, Bihar, India</p>
-
-        <h4>Follow Me</h4>
-
-        <div class="socials">
-            <a href="https://github.com/93sachin"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:sachinesky@gmail.com"><i class="fas fa-envelope"></i></a>
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">Work History</span>
+    <h2>Internship <span class="gradient-text">Experience</span></h2>
+    <p class="section-sub">Hands-on experience gained through fieldwork, surveys, and real-world data analysis</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="card experience-card">
+        <div class="exp-header">
+          <div>
+            <h3><i class="fas fa-briefcase"></i> Community Development Intern</h3>
+            <h4 class="exp-org">Naye Aasha Organization</h4>
+          </div>
+          <span class="badge">Internship</span>
         </div>
 
+        <div class="exp-meta">
+          <span><i class="fas fa-calendar"></i> Jun 2024 – Jul 2024</span>
+          <span><i class="fas fa-map-marker-alt"></i> Arrah, Bihar, India</span>
+        </div>
+
+        <p class="exp-desc">
+          Conducted on-ground data collection and surveys by visiting communities and interacting with 50+ beneficiaries
+          to understand real-world challenges. Collected, organized, and analyzed survey data to generate meaningful insights.
+          Prepared structured reports and collaborated with team members to support community development initiatives.
+        </p>
+
+        <div class="exp-bottom">
+          <div>
+            <h5>Technologies Used</h5>
+            <div class="tags">
+              <span>Excel</span><span>Data Analysis</span><span>Reporting</span>
+            </div>
+          </div>
+          <div>
+            <h5>Key Achievements</h5>
+            <ul>
+              <li>Surveyed 50+ individuals and collected real-time data</li>
+              <li>Analyzed responses to identify trends and key insights</li>
+              <li>Prepared reports to support data-driven decision-making</li>
+              <li>Improved data accuracy and reporting efficiency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- RIGHT SIDE FORM -->
-    <div class="contact-right">
-
-        <h3>Send Me a Message</h3>
-
-        <form action="https://formspree.io/f/mqeyjdno" method="POST">
-
-            <input type="text" name="name" placeholder="Enter your name" required>
-
-            <input type="email" name="email" placeholder="your.email@example.com" required>
-
-            <textarea name="message" placeholder="Write your message..." required></textarea>
-
-            <input type="hidden" name="_next" value="">
-
-            <button type="submit">Send Message ✈️</button>
-
-        </form>
-
-        <div id="success-msg" style="display:none; color:lightgreen; margin-top:10px;">
-    ✅ Message Sent Successfully!
-</div>
-
-    </div>
-
-</div>
-
+  </div>
 </section>
 
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">My Work</span>
+    <h2>Featured <span class="gradient-text">Projects</span></h2>
+    <p class="section-sub">Real-world applications built with modern tech stacks</p>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="filter-row">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+    <button class="filter-btn" data-filter="data">Data Analysis</button>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- 1: Job Portal -->
+    <div class="card project-card reveal" data-category="fullstack">
+      <div class="project-img-wrap">
+        <img src="images/job-portal.png" class="project-img" alt="Job Portal">
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>🚀 Job Portal Web App</h3>
+          <span class="featured">⭐ Featured</span>
+        </div>
+        <p class="desc">
+          Full-stack job portal with secure authentication, role-based access control for job seekers and recruiters.
+          Built REST APIs using Django and integrated with a responsive React frontend with job posting, application tracking, and dashboards.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Django · React · MySQL · REST API</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/job-portal-frontend.git" target="_blank"><i class="fab fa-github"></i> Frontend</a>
+          <a href="https://github.com/93sachin/job-portal-backend.git" target="_blank"><i class="fab fa-github"></i> Backend</a>
+          <a href="https://job-portal-frontend-2rns.vercel.app/" target="_blank" class="btn-live"><i class="fas fa-play"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2: Heart Disease -->
+    <div class="card project-card reveal" data-category="ml">
+      <div class="project-img-wrap">
+        <img src="images/heart.png" class="project-img" alt="Heart Disease Prediction">
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>❤️ Heart Disease Prediction</h3>
+        </div>
+        <p class="desc">
+          ML model to predict the likelihood of heart disease using real-world healthcare datasets.
+          Performed data preprocessing, normalization, feature selection and evaluated multiple models achieving ~80% accuracy.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Python · Pandas · Scikit-learn · Matplotlib</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/Heart_diseases_prediction-System.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://heart-disease-ml-dashboard-cjldaxzdmkbqzzfazyzjnr.streamlit.app/" target="_blank" class="btn-live"><i class="fas fa-play"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3: EV Analysis -->
+    <div class="card project-card reveal" data-category="data">
+      <div class="project-img-wrap">
+        <img src="images/ev.png" class="project-img" alt="EV Data Analysis">
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>⚡ EV Market Data Analysis</h3>
+        </div>
+        <p class="desc">
+          Analyzed electric vehicle dataset using Python to identify trends, patterns, and market insights.
+          Explored regional adoption, growth trends, and market distribution with rich visualizations.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Python · Pandas · Matplotlib · Seaborn</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/Python-project-.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://mu8qrsvpwaawa3shvmc3zk.streamlit.app/" target="_blank" class="btn-live"><i class="fas fa-play"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4: COVID Dashboard -->
+    <div class="card project-card reveal" data-category="data">
+      <div class="project-img-wrap">
+        <img src="images/covid.png" class="project-img" alt="COVID Dashboard">
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>🦠 COVID-19 Analysis Dashboard</h3>
+        </div>
+        <p class="desc">
+          Interactive Power BI dashboard analyzing COVID-19 data across regions.
+          Visualized key metrics — cases, deaths, recoveries — with filtering and drill-down features.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Power BI · Data Visualization</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/Covid-19-Analysis-Dashboard.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiODQxZGFlYzYtNzY5NS00ODEyLWI3M2EtYWY2OWU2OGZiN2I2IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn-live"><i class="fas fa-play"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5: Portfolio Website -->
+    <div class="card project-card reveal" data-category="fullstack">
+      <div class="project-img-wrap">
+        <div class="project-img-placeholder">
+          <i class="fas fa-globe"></i>
+        </div>
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>🌐 Personal Portfolio Website</h3>
+          <span class="featured new-badge">🆕 New</span>
+        </div>
+        <p class="desc">
+          Designed and developed this fully responsive personal portfolio website with particle animations,
+          scroll-reveal effects, project filtering, certificate lightbox, and a working contact form.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> HTML · CSS · JavaScript · Formspree</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/sachin-portfolio.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section id="certifications" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">Achievements</span>
+    <h2>🏆 <span class="gradient-text">Certifications</span></h2>
+    <p class="section-sub">Verified credentials from industry-leading platforms</p>
+  </div>
+
+  <div class="cert-grid">
+
+    <!-- 1 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/training.jpg" class="cert-img" alt="Data Analytics">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo lpu-bg">LPU</div>
+        <h3>Data Analytics Essentials</h3>
+        <p class="org">Lovely Professional University</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2024</p>
+        <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span></div>
+        <a href="images/training.jpg" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/genai.jpg" class="cert-img" alt="GenAI">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo infosys-bg">IS</div>
+        <h3>Build Generative AI Apps</h3>
+        <p class="org">Infosys Springboard</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2025</p>
+        <div class="tags"><span>GenAI</span><span>LLM</span><span>AI Apps</span></div>
+        <a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/chatgpt.jpg" class="cert-img" alt="ChatGPT">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo infosys-bg">IS</div>
+        <h3>ChatGPT Prompt Engineering</h3>
+        <p class="org">Infosys Springboard</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2025</p>
+        <div class="tags"><span>Prompting</span><span>AI</span><span>LLM</span></div>
+        <a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/masterai.jpg" class="cert-img" alt="Master GenAI">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo infosys-bg">IS</div>
+        <h3>Master Generative AI</h3>
+        <p class="org">Infosys Springboard</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2025</p>
+        <div class="tags"><span>AI Tools</span><span>Automation</span></div>
+        <a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/infosys.jpg" class="cert-img" alt="Computational Theory">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo infosys-bg">IS</div>
+        <h3>Computational Theory</h3>
+        <p class="org">Infosys Springboard</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2025</p>
+        <div class="tags"><span>Algorithms</span><span>Theory</span></div>
+        <a href="https://infyspringboard.onwingspan.com/web/en/app/profile/competency/certificate" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/nptel.jpg" class="cert-img" alt="Social Networks">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo nptel-bg">IIT</div>
+        <h3>Social Networks</h3>
+        <p class="org">NPTEL (IIT Madras)</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2025</p>
+        <div class="tags"><span>Networking</span><span>Protocols</span></div>
+        <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs102/Course/NPTEL25CS102S95870066310798222.pdf" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/google.jpg" class="cert-img" alt="Google Cloud">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo google-bg">G</div>
+        <h3>Generative AI Studio</h3>
+        <p class="org">Google Cloud</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2026</p>
+        <div class="tags"><span>Cloud AI</span><span>GenAI</span></div>
+        <a href="https://simpli.app.link/7EyhmAyTr1b" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/coursera.jpg" class="cert-img" alt="Coursera">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo google-bg">G</div>
+        <h3>Bits &amp; Bytes of Computer Networking</h3>
+        <p class="org">Google (Coursera)</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2024</p>
+        <div class="tags"><span>Networking</span><span>Internet</span></div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/M6QQNWAVPE96" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="cert-card reveal" onclick="openCertModal(this)">
+      <div class="cert-img-wrap">
+        <img src="images/udemy.jpg" class="cert-img" alt="Udemy">
+        <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issuer-logo udemy-bg">U</div>
+        <h3>Python Bootcamp</h3>
+        <p class="org">Udemy</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2024</p>
+        <div class="tags"><span>Python</span><span>Programming</span></div>
+        <a href="https://www.udemy.com/certificate/UC-05409a32-6994-40d6-b208-3eeb2337777c/" target="_blank" class="cert-btn" onclick="event.stopPropagation()">
+          <i class="fas fa-certificate"></i> Verify
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Certificate Lightbox Modal -->
+<div id="cert-modal" class="modal-overlay" onclick="closeCertModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeCertModal()"><i class="fas fa-times"></i></button>
+    <img id="modal-img" src="" alt="Certificate">
+    <div id="modal-info">
+      <h3 id="modal-title"></h3>
+      <p id="modal-org"></p>
+      <a id="modal-verify" href="#" target="_blank" class="cert-btn">
+        <i class="fas fa-external-link-alt"></i> Verify Certificate
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== RESUME ===================== -->
+<section id="resume" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">Career Profile</span>
+    <h2>My <span class="gradient-text">Resume</span></h2>
+    <p class="section-sub">A snapshot of my academic, technical, and professional journey</p>
+  </div>
+
+  <div class="resume-container">
+    <!-- Preview Panel -->
+    <div class="resume-preview reveal">
+      <div class="resume-mockup">
+        <div class="resume-page">
+          <div class="rm-header">
+            <div class="rm-avatar"></div>
+            <div class="rm-title">
+              <div class="rm-bar wide"></div>
+              <div class="rm-bar medium"></div>
+            </div>
+          </div>
+          <div class="rm-section">
+            <div class="rm-bar short accent"></div>
+            <div class="rm-bar full"></div>
+            <div class="rm-bar full"></div>
+            <div class="rm-bar three-quarter"></div>
+          </div>
+          <div class="rm-section">
+            <div class="rm-bar short accent"></div>
+            <div class="rm-skill-row">
+              <div class="rm-skill-chip"></div>
+              <div class="rm-skill-chip"></div>
+              <div class="rm-skill-chip"></div>
+            </div>
+            <div class="rm-skill-row">
+              <div class="rm-skill-chip"></div>
+              <div class="rm-skill-chip"></div>
+            </div>
+          </div>
+          <div class="rm-section">
+            <div class="rm-bar short accent"></div>
+            <div class="rm-bar full"></div>
+            <div class="rm-bar full"></div>
+            <div class="rm-bar half"></div>
+          </div>
+        </div>
+        <div class="resume-glow"></div>
+      </div>
+    </div>
+
+    <!-- Resume Info -->
+    <div class="resume-info reveal">
+      <div class="resume-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <h4>B.Tech CSE</h4>
+            <p>Lovely Professional University · 2023–2027</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+          <div>
+            <h4>Community Dev Intern</h4>
+            <p>Naye Aasha Organization · 2024</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-code"></i></div>
+          <div>
+            <h4>5+ Projects</h4>
+            <p>Full Stack · ML · Data Analysis</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-certificate"></i></div>
+          <div>
+            <h4>9+ Certifications</h4>
+            <p>Google · Infosys · NPTEL · Udemy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-cta">
+        <a href="Sachin_Gen_Resume.pdf" target="_blank" class="btn-primary large">
+          <i class="fas fa-eye"></i> View Resume
+        </a>
+        <a href="Sachin_Gen_Resume.pdf" download class="btn-outline large">
+          <i class="fas fa-download"></i> Download PDF
+        </a>
+      </div>
+
+      <p class="resume-note"><i class="fas fa-info-circle"></i> Last updated: 2026 · PDF format</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">Say Hello</span>
+    <h2>Get In <span class="gradient-text">Touch</span></h2>
+    <p class="section-sub">Have a project in mind or a role to fill? I'd love to hear from you.</p>
+  </div>
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-left reveal">
+      <h3>Let's Connect</h3>
+
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <p class="ci-label">Email</p>
+          <a href="mailto:sachinesky@gmail.com" class="ci-value">sachinesky@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <p class="ci-label">Location</p>
+          <p class="ci-value">Arrah, Bihar, India</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+        <div>
+          <p class="ci-label">Availability</p>
+          <p class="ci-value">Open to opportunities</p>
+        </div>
+      </div>
+
+      <h4>Follow Me</h4>
+      <div class="socials">
+        <a href="https://github.com/93sachin" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sachin-kumar2027/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sachinesky@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-right reveal">
+      <h3>Send Me a Message</h3>
+
+      <form action="https://formspree.io/f/mqeyjdno" method="POST" id="contact-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Project Inquiry / Job Offer">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <input type="hidden" name="_next" value="">
+        <button type="submit" class="btn-primary full-width">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+
+      <div id="success-msg" style="display:none;">
+        <i class="fas fa-check-circle"></i> Message Sent Successfully! I'll get back to you soon.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Sachin Kumar</p>
+  <div class="footer-content">
+    <div class="logo">SK</div>
+    <p>Designed &amp; Built by <span class="gradient-text">Sachin Kumar</span></p>
+    <p class="footer-sub">© 2026 · All rights reserved</p>
+    <div class="socials footer-socials">
+      <a href="https://github.com/93sachin" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sachin-kumar2027/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sachinesky@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- Back to top -->
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
+<script src="script.js"></script>
 </body>
 </html>
