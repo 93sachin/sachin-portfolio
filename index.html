@@ -60,7 +60,7 @@
 
     <div class="stat-row">
       <div class="stat-item">
-        <span class="stat-num">5+</span>
+        <span class="stat-num">8+</span>
         <span class="stat-label">Projects</span>
       </div>
       <div class="stat-divider"></div>
@@ -111,7 +111,7 @@
         <p class="uni-name">Lovely Professional University</p>
         <p>Computer Science Engineering &nbsp;|&nbsp; 2023–2027</p>
         <p>Focused on Data Science, ML, and Development</p>
-        <div class="cgpa-badge"><i class="fas fa-star"></i> CGPA: 6.75 / 10</div>
+        <div class="cgpa-badge"><i class="fas fa-star"></i> CGPA: 7.01 / 10</div>
       </div>
     </div>
 
@@ -215,6 +215,7 @@
     <button class="filter-btn" data-filter="fullstack">Full Stack</button>
     <button class="filter-btn" data-filter="ml">Machine Learning</button>
     <button class="filter-btn" data-filter="data">Data Analysis</button>
+    <button class="filter-btn" data-filter="nlp">NLP / AI</button>
   </div>
 
   <div class="project-grid">
@@ -309,7 +310,82 @@
       </div>
     </div>
 
-    <!-- 5: Portfolio Website -->
+    <!-- 5: Event Popularity NLP -->
+    <div class="card project-card reveal" data-category="nlp">
+      <div class="project-img-wrap">
+        <div class="project-img-placeholder nlp-bg">
+          <i class="fas fa-language"></i>
+        </div>
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>🧠 Event Popularity NLP</h3>
+          <span class="featured nlp-badge">🔤 NLP</span>
+        </div>
+        <p class="desc">
+          Built an NLP pipeline to analyze and predict the popularity of events using text data.
+          Applied techniques like TF-IDF, sentiment analysis, and text classification to extract
+          meaningful features from event descriptions and predict engagement levels.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Python · NLP · Scikit-learn · TF-IDF · NLTK</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/Event-Popularity-NLP.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6: Ecommerce Sales Analysis -->
+    <div class="card project-card reveal" data-category="data">
+      <div class="project-img-wrap">
+        <div class="project-img-placeholder ecom-bg">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>🛒 E-Commerce Sales Analysis</h3>
+          <span class="featured data-badge">📊 Data</span>
+        </div>
+        <p class="desc">
+          Performed end-to-end exploratory data analysis on e-commerce sales data to uncover
+          trends, top-performing products, seasonal patterns, and customer behaviour.
+          Visualized KPIs like revenue, conversion rate, and regional performance using Python dashboards.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Python · Pandas · Matplotlib · Seaborn · EDA</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/Ecommerce-Sales-Analysis.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7: Investment Research Agent -->
+    <div class="card project-card reveal" data-category="nlp">
+      <div class="project-img-wrap">
+        <div class="project-img-placeholder agent-bg">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+      </div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>🤖 Investment Research Agent</h3>
+          <span class="featured ai-badge">🤖 AI Agent</span>
+        </div>
+        <p class="desc">
+          Built an autonomous AI agent that performs investment research by searching the web,
+          analyzing financial news, and generating structured investment briefs using LLMs.
+          Leverages multi-agent reasoning to deliver data-driven stock insights and recommendations.
+        </p>
+        <p class="tech"><i class="fas fa-code"></i> Python · LLM · LangChain · GenAI · Agents</p>
+        <div class="card-buttons">
+          <a href="https://github.com/93sachin/investment-research-agent.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8: Portfolio Website -->
     <div class="card project-card reveal" data-category="fullstack">
       <div class="project-img-wrap">
         <div class="project-img-placeholder">
@@ -320,8 +396,7 @@
       <div class="project-body">
         <div class="project-top">
           <h3>🌐 Personal Portfolio Website</h3>
-          <span class="featured new-badge">🆕 New</span>
-        </div>
+          <span class="featured new-badge">🆕 New</span>        </div>
         <p class="desc">
           Designed and developed this fully responsive personal portfolio website with particle animations,
           scroll-reveal effects, project filtering, certificate lightbox, and a working contact form.
