@@ -150,9 +150,10 @@ const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
@@ -174,9 +175,11 @@ filterBtns.forEach(btn => {
 
       if (show) {
         card.style.display = 'flex';
-        setTimeout(() => card.classList.add('visible'), 20);
+        // Force visible after display set
+        requestAnimationFrame(() => {
+          card.classList.add('visible');
+        });
       } else {
-        card.classList.remove('visible');
         card.style.display = 'none';
       }
     });
